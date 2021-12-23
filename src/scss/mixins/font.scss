@@ -1,0 +1,44 @@
+@mixin text-mega{
+    font-size: 6.4rem;
+    line-height: (78 / 64);
+}
+@mixin text-mega-sm{
+    font-size: 5.3rem;
+    line-height: (64 / 53);
+}
+@mixin text-headline {
+    font-size: 2.4rem;
+    line-height: (29 / 24);
+}
+@mixin text-mega-mobile{
+    font-size: 2rem;
+    line-height: (24 / 20);
+}
+@mixin text-caption {
+    font-size: 1.8rem;
+    line-height: (30 / 18);
+}
+@mixin text-average {
+    font-size: 1.8rem;
+    line-height: (25 / 18);
+}
+@mixin text-average-mobile{
+    font-size: 1.2rem;
+    line-height: (25 / 12);
+}
+@mixin text-small {
+    font-size: 1.8rem;
+    line-height: (22 / 18);
+}
+@mixin text-small-mobile{
+    font-size: 1.2rem;
+    line-height: (15 / 12);
+}
+@mixin text-body{
+    font-size: 1.3rem;
+    line-height: (16 / 13);
+} 
+@mixin text-lesser{
+    font-size: 1.4rem;
+    line-height: (17 / 14);
+}

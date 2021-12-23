@@ -1,0 +1,122 @@
+.hero {
+    padding-top: 93px;
+    padding-bottom: 30px;
+    min-height: 100vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    color: map-get($colors, white);
+    @include flex-column;
+
+    @include media-tablet {
+        padding-top: 50px;
+        min-height: auto;
+    }
+
+    @include media-mobile {
+        padding: 36px 0 50px;
+    }
+}
+.menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 40px;
+    top: 35px;
+    display: none;
+
+    @include media-mobile {
+    display: block;
+    }
+}
+.hero-container {
+    @include flex-column;
+}
+.header {
+    @include flex-between;
+    padding-bottom: 30px;
+
+    @include media-mobile {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+.logo {
+    @include text-headline;
+    font-weight: bold;
+}
+
+.header-nav__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+
+    @include media-tablet-sm {
+        gap: 30px;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
+}
+.header-nav__link {
+    @include text-small;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-nav__link::before {
+    content: attr(data-text);
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    user-select: none;
+    pointer-events: none;
+    font-weight: bold;
+}
+.header-nav__link:hover {
+    font-weight: bold;
+}
+.hero-content {
+    @include flex-column;
+    justify-content: center;
+
+    @include media-mobile {
+        align-items: center;
+    }
+}
+.hero-content__title {
+    @include text-mega;
+    margin-bottom: 26px;
+    font-weight: normal;
+
+    @include media-tablet-sm {
+        @include text-mega-sm;
+    }
+
+    @include media-mobile {
+        @include text-mega-mobile;
+        margin-bottom: 13px;
+    }
+}
+.hero-content__txt {
+    @include text-headline;
+    font-weight: normal;
+    margin-bottom: 106px;
+
+    @include media-mobile {
+        @include text-body;
+        margin-bottom: 41px;
+    }
+}
+.hero-content__link {
+    @include text-small;
+    font-weight: normal;
+    text-decoration: underline;
+
+    @include media-mobile {
+        @include text-body;
+    }
+}

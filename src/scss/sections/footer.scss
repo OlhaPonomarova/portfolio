@@ -1,0 +1,63 @@
+.footer {
+    position: relative;
+    padding: 93px 0 189px;
+    background-color: map-get($colors, back-color);
+
+    @include media-tablet {
+        padding: 50px 0 100px;
+    }
+    @include media-mobile {
+        padding: 26px 0 50px;
+    }
+}
+.footer__title {
+    margin-bottom: 51px;
+
+    @include media-mobile {
+        margin-bottom: 25px;
+    }
+}
+.footer__wrapper {
+    display: flex;
+
+    @include media-mobile {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+.footer__list {
+    @include flex-column;
+    gap: 14px;
+
+    @include media-mobile {
+        gap: 19px;
+        &:last-of-type {
+            gap: 7px;
+            flex-basis: 100%;
+        }
+    }
+}
+
+.footer__link {
+    color: map-get($colors, gray-1);
+    font-weight: normal;
+    @include text-small;
+
+    @include media-mobile {
+        @include text-lesser;
+    }
+}
+.footer-arrow {
+    position: absolute;
+    top: 434px;
+    right: 220px;
+
+    @include media-tablet { 
+        top: 88%;
+        right:11%;
+    }
+    @include media-mobile {
+        top: 70%;
+        right: 13%;
+    }
+}

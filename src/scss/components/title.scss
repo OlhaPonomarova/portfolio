@@ -1,0 +1,9 @@
+.title{
+    @include text-headline;
+      font-weight: bold;
+      color: map-get($colors, gray-1);
+      
+      @include media-mobile{
+        text-align: center;
+      }
+  }

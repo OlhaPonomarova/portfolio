@@ -1,0 +1,10 @@
+.txt{
+    @include text-caption;
+    font-weight: normal;
+    color: map-get($colors, gray-1);
+    
+    @include media-mobile{
+      @include text-small-mobile;
+    }
+    
+  }

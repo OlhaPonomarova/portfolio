@@ -1,0 +1,22 @@
+body,
+html{ 
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 10px;
+    scroll-behavior:smooth;
+
+    @include media-tablet{
+        font-size: 8px;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 1107px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-tablet{
+        width: 80%;
+    }
+}

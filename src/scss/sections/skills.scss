@@ -1,0 +1,112 @@
+.skills{
+    padding: 93px 0 145px;
+    background-color: map-get($colors, back-color);
+
+    @include media-tablet{
+        padding: 50px 0;
+    }
+    @include media-mobile{
+        padding: 25px 0;
+    }
+}
+.skills__title{
+    margin-bottom: 86px;
+    @include media-mobile{
+        margin-bottom: 25px;
+    }
+}
+.skills__wrapper{
+    @include flex-between;
+    gap: 125px;
+
+    @include media-tablet{
+        gap: 50px;
+    }
+
+    @include media-tablet-sm{
+        @include flex-column;
+        }
+    @include media-mobile{
+        gap: 26px;
+    }
+}
+.skills__img{
+    width: 350px;  
+    @include media-mobile{
+        width: 224px;
+    }
+}
+.skills-content{
+    @include flex-column;
+    gap: 20px;
+
+    @include media-mobile{
+        gap: 18px;
+    }
+}
+
+.skills-content__list{
+    @include flex-column;
+    gap: 20px;
+    
+    @include media-mobile{
+        gap: 10px;
+    }
+}
+.skills-content__list:first-child{
+    padding-bottom: 45px;
+
+    @include media-mobile{
+        padding-bottom: 17px;
+    }
+}
+.skills-content__row{
+    display: flex;
+    gap: 66px;
+    align-items: center;
+
+    @include media-tablet{
+        gap: 15px;
+    }
+    @include media-tablet-sm{
+        gap: 50px;
+    }
+    @include media-mobile{
+        gap:16px;
+    }
+}
+.skills-content__row-name{
+    width: 130px;
+    @include text-average;
+    font-weight: 600;
+    color: map-get($colors, gray-1); 
+
+   @include media-tablet-sm{
+       width: 200px;
+   }
+
+    @include media-mobile{
+        @include text-average-mobile;
+        width: 74px;
+    }
+    }
+.skills-content__row-value{
+    @include text-average;
+    font-weight: normal;
+    color: map-get($colors, gray-1);
+    @include media-mobile{
+        @include text-average-mobile;
+    }
+}
+.skills-content__progressbar{
+    flex-grow: 1;
+    height: 24px;
+    background-color: map-get($colors, brown-100);
+    @include media-mobile{
+        height: 18px;
+    }
+}
+.skills-conutent__progressbar-track{
+    height: 100%;
+    background-color: #C66C49;
+}
